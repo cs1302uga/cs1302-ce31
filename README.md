@@ -50,7 +50,8 @@ command depends on your present working directory), then please note that contex
    In your notes, write down which algorithm you think will be able to sort it the
    fastest according to: i) comparisons; and ii) swaps.
 
-1. **NEXT GROUP MEMBER:** Now, write the code in `main` to sort the `users` array by user
+1. **NEXT GROUP MEMBER:** In `main`, adjust the code so that MyFace `users` array only contains
+   `100` usres. Then, write the code to sort the `users` array by user
    social score using each of the four algorithms available in the `cs1302.sorting` package.
    For this problem, you will need to supply a custom `Comparator<MyFaceUser>` implementation
    (probably using a lambda expression). You may use the `Swapper<MyFaceUser>` returned by
