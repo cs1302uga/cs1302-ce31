@@ -63,7 +63,7 @@ command depends on your present working directory), then please note that contex
    `Swapper.getNetworkSwapper(100)` to simulate random network lag with a maximum delay of
    `100` milliseconds.
    
-1. To avoid computing the total running time manually, let's write a bit of additional code
+   To avoid computing the total running time manually, let's write a bit of additional code
    to have the program print an _estimate_ for total run time of each algorithm **in seconds**. 
    To accomplish this, you will need to gain access to the individual statistics for comparisons 
    and swaps using the methods provided in the 
@@ -71,7 +71,8 @@ command depends on your present working directory), then please note that contex
    Add the code to print the total time (comparison time plus swap time) for each algorithm in
    seconds. **Note:** You will need to convert from nanoseconds to seconds before printing.
 
-   1. **Before running,** guess which algorithm you think will win.
+   1. **Before running,** guess which algorithm you think will win. Note which algorithm you 
+      think will be able to sort our users the fastest (total time estimate).
 
    1. Once your code code compiles and runs, **run it a four times** and complete a table
       similar to the following in your notes:
@@ -93,18 +94,28 @@ command depends on your present working directory), then please note that contex
 
 1. **EVERYONE:** Pull your changes from the group repository.
 
-1. **EVERYONE:** Popularity in MyFace has increased! The social networking site just added `9900` new
-   members! The increase in revenue from ad sales has allowed the company to update their network
-   infrastructure which will dramatically reduce swap times.   
+1. **NEXT GROUP MEMBER:** Popularity in MyFace has increased! The social networking site just added 
+   `9900` new members! The increase in revenue from ad sales has allowed the company to update their 
+   network infrastructure which will dramatically reduce swap times.   
 
-1. In `main`, adjust the code to reduce the swap delay to `1ms` and update the number of members to `10,000`. 
-   In your notes, write down which algorithm you think will be able to sort our users the fastest (total time).
+   In `main`, adjust the code to reduce the swap delay to `1ms` and update 
+   the number of members to `10,000`. 
    
-   1. Once your code code compiles and runs, **run it a couple times**. Each time, does your
-      choice of algorithm win or lose? Write it in your notes!
+   1. **Before running,** guess which algorithm you think will win. Note which algorithm you 
+      think will be able to sort our users the fastest (total time estimate).
+
+   1. Once your code code compiles and runs, **run it a four times** and complete a table
+      similar to the following in your notes:
       
-   1. In addition to writing the winning algorithm, write down the total run time for each algorithm
-      using the `100ms` delay network swapper.
+      | Algo      | Runtime 1 | Runtime 2 | Runtime 3 | Runtime 4 |
+      |-----------|-----------|-----------|-----------|-----------|
+      | Bubble    |-----------|-----------|-----------|-----------|
+      | Selection |-----------|-----------|-----------|-----------|
+      | Insertion |-----------|-----------|-----------|-----------|
+      | Quick     |-----------|-----------|-----------|-----------|
+      
+      For each run, write down the runtime estimate **in seconds** and circle the fastest
+      one. Did your choice of algorithm win or lose each time?
       
    1. Also, write down the a rough estimate of the average swap / comparison time across all algorithms.
       No need to get a calculator out - just get a rough idea.  Which operation took more time?
