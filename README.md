@@ -121,10 +121,30 @@ command depends on your present working directory), then please note that contex
    behavior, in general. Also, some of the messages might be a bit odd (people send weird things) - the
    contents of the messages were populated from the [Fortune Cookie Database] (https://github.com/bmc/fortunes).
    
-1. Do some sorts.
+1. Once you are sure that your method is working, update your `Comparator` so that our sorting algorithms
+   will sort based on this updated criteria. In your notes, write down which algorithm you think will be able 
+   to sort it the fastest according to total time.
+
+1. Now, write the code in `main` to sort the `users` array by user their large word count using 
+   each of the four algorithms available in the `cs1302.sorting` package.
+   For this problem, you will need to use your custom `Comparator<MyFaceUser>` implementation.
+   You should use the `Swapper<MyFaceUser>` returned by `Swapper.getNetworkSwapper(1)`.
+
+   1. Change your social network size to `750` users for testing. Once your code code compiles 
+      and runs, **run it a couple times**. Each time, does your choice of algorithm win or lose? 
+      Write it in your notes!
+      
+   1. In addition to writing the winning algorithm, write down the total run time for each algorithm.
+      
+   1. Also, write down the a rough estimate of the average swap / comparison time across all algorithms.
+      No need to get a calculator out - just get a rough idea.  Which operation took more time?
+      
+   1. Stage, commit, and push all changes.
+
+1. **EVERYONE:** Pull your changes from the group repository.
+
 **CHECKPOINT**
  
-
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
