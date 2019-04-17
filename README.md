@@ -98,21 +98,15 @@ command depends on your present working directory), then please note that contex
    1. **Before running,** guess which algorithm you think will win. That is, write down which 
       algorithm you think will be able to sort our users the fastest (by total time estimate).
 
-   1. Once your code code compiles and runs, **run it three times** and complete both tables
+   1. Once your code code compiles and runs, **run it three times** and the table
       below in your notes (title the table **75 users -- 100 ms delay**):
       
-      | Algo      | Runtime 1 | Runtime 2 | Runtime 3 |
-      |-----------|-----------|-----------|-----------|
-      | ~Bubble~  |-----------|-----------|-----------|
-      | Selection |-----------|-----------|-----------|
-      | Insertion |-----------|-----------|-----------|
-      | Quick     |-----------|-----------|-----------|
-      
-      | Algo      | Average Comparison Time | Average Swap Time |
-      |-----------|-------------------------|-------------------|
-      | Selection |-------------------------|-------------------|
-      | Insertion |-------------------------|-------------------|
-      | Quick     |-------------------------|-------------------|
+      | Algo      | Runtime 1 | Runtime 2 | Runtime 3 | Avg. Comp. Time | Avg Swap Time |
+      |-----------|-----------|-----------|-----------|-----------------|---------------|
+      | ~Bubble~  |-----------|-----------|-----------|-----------------|---------------|
+      | Selection |-----------|-----------|-----------|-----------------|---------------|
+      | Insertion |-----------|-----------|-----------|-----------------|---------------|
+      | Quick     |-----------|-----------|-----------|-----------------|---------------|
        
       For each run, write down the runtime estimate **in seconds** and circle the fastest
       one. Did your choice of algorithm win or lose each time? In the other table, not the
@@ -135,20 +129,14 @@ command depends on your present working directory), then please note that contex
    1. **Before running,** guess which algorithm you think will win. Note which algorithm you 
       think will be able to sort our users the fastest (total time estimate).
 
-   1. Once your code code compiles and runs, **run it three times** and complete both tables
+   1. Once your code code compiles and runs, **run it three times** and the table
       below in your notes (title the table **10,000 users -- 1 ms delay**):
       
-      | Algo      | Runtime 1 | Runtime 2 | Runtime 3 |
-      |-----------|-----------|-----------|-----------|
-      | Selection |-----------|-----------|-----------|
-      | Insertion |-----------|-----------|-----------|
-      | Quick     |-----------|-----------|-----------|
-      
-      | Algo      | Average Comparison Time | Average Swap Time |
-      |-----------|-------------------------|-------------------|
-      | Selection |-------------------------|-------------------|
-      | Insertion |-------------------------|-------------------|
-      | Quick     |-------------------------|-------------------|
+      | Algo      | Runtime 1 | Runtime 2 | Runtime 3 | Avg. Comp. Time | Avg Swap Time |
+      |-----------|-----------|-----------|-----------|-----------------|---------------|
+      | Selection |-----------|-----------|-----------|-----------------|---------------|
+      | Insertion |-----------|-----------|-----------|-----------------|---------------|
+      | Quick     |-----------|-----------|-----------|-----------------|---------------|
        
       For each run, write down the runtime estimate **in seconds** and circle the fastest
       one. Did your choice of algorithm win or lose each time? In the other table, not the
@@ -203,20 +191,14 @@ command depends on your present working directory), then please note that contex
    1. **Before running,** guess which algorithm you think will win. Note which algorithm you 
       think will be able to sort our users the fastest (total time estimate).
 
-   1. Once your code code compiles and runs, **run it three times** and complete both tables
+   1. Once your code code compiles and runs, **run it three times** and the table
       below in your notes (title the table **750 users -- 1ms delay -- big comparator**):
       
-      | Algo      | Runtime 1 | Runtime 2 | Runtime 3 |
-      |-----------|-----------|-----------|-----------|
-      | Selection |-----------|-----------|-----------|
-      | Insertion |-----------|-----------|-----------|
-      | Quick     |-----------|-----------|-----------|
-      
-      | Algo      | Average Comparison Time | Average Swap Time |
-      |-----------|-------------------------|-------------------|
-      | Selection |-------------------------|-------------------|
-      | Insertion |-------------------------|-------------------|
-      | Quick     |-------------------------|-------------------|
+      | Algo      | Runtime 1 | Runtime 2 | Runtime 3 | Avg. Comp. Time | Avg Swap Time |
+      |-----------|-----------|-----------|-----------|-----------------|---------------|
+      | Selection |-----------|-----------|-----------|-----------------|---------------|
+      | Insertion |-----------|-----------|-----------|-----------------|---------------|
+      | Quick     |-----------|-----------|-----------|-----------------|---------------|
        
       For each run, write down the runtime estimate **in seconds** and circle the fastest
       one. Did your choice of algorithm win or lose each time? In the other table, not the
