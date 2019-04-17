@@ -63,15 +63,9 @@ command depends on your present working directory), then please note that contex
    `Swapper.getNetworkSwapper(100)` to simulate random network lag with a maximum delay of
    `100` milliseconds.
    
-   To avoid computing the total running time manually, let's write a bit of additional code
-   to have the program print an _estimate_ for total run time of each algorithm **in seconds**. 
-   To accomplish this, you will need to gain access to the individual statistics for comparisons 
-   and swaps using the methods provided in the 
-   [`Sort API`](http://cobweb.cs.uga.edu/~mec/cs1302-mvn-site/cs1302-sorting/apidocs/index.html).
-   Add the code to print the total time (comparison time plus swap time) for each algorithm in
-   seconds. **Note:** You will need to convert from nanoseconds to seconds before printing.
-   
-   1. Implement the following method:
+   1. To avoid computing the total running time manually, let's write a bit of additional code
+      to have the program print an _estimate_ for total run time of each algorithm **in seconds**. 
+      To accomplish this, implement the following method:
    
       ```
       /**
@@ -92,6 +86,8 @@ command depends on your present working directory), then please note that contex
       Average Comparision Time =
       Average Swap Time        = 
       ```
+      
+   1. Add the code to print the total runtime estimate for each algorithm in seconds. 
 
    1. **Before running,** guess which algorithm you think will win. Note which algorithm you 
       think will be able to sort our users the fastest (total time estimate).
