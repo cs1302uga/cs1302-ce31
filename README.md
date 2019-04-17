@@ -56,7 +56,7 @@ command depends on your present working directory), then please note that contex
    doing comparisons and the total time spent doing swaps.
 
 1. **NEXT GROUP MEMBER (SWAP DRIVERS):** In `main`, adjust the code so that MyFace `users` array 
-   only contains `100` users. Then, write the code to sort the `users` array by user
+   only contains `75` users. Then, write the code to sort the `users` array by user
    social score using the selection sort, inserstion sort, and quicksort algorithms available 
    in the `cs1302.sorting` package -- your boss heard that 
    [former President Obama thinks, "the bubble sort is not the way to go."](https://youtu.be/k4RRi_ntQc8?t=34)
@@ -85,8 +85,8 @@ command depends on your present working directory), then please note that contex
       Here is an example of the expected output of this method:
       
       ```
-      Total Runtime Estimate   = 109.952384858 s
-      Average Comparision Time = 57.7091 us
+      Total Runtime Estimate   = 27.4746948 s
+      Average Comparision Time = 7.47091 us
       Average Swap Time        = 48938.210 us
       ```
       
@@ -98,8 +98,8 @@ command depends on your present working directory), then please note that contex
    1. **Before running,** guess which algorithm you think will win. That is, write down which 
       algorithm you think will be able to sort our users the fastest (by total time estimate).
 
-   1. Once your code code compiles and runs, **run it three times** and complete a table
-      similar to the following in your notes:
+   1. Once your code code compiles and runs, **run it three times** and complete both tables
+      below in your notes (title the table **75 users -- 100 ms delay**):
       
       | Algo      | Runtime 1 | Runtime 2 | Runtime 3 |
       |-----------|-----------|-----------|-----------|
@@ -108,8 +108,15 @@ command depends on your present working directory), then please note that contex
       | Insertion |-----------|-----------|-----------|
       | Quick     |-----------|-----------|-----------|
       
+      | Algo      | Average Comparison Time | Average Swap Time |
+      |-----------|-------------------------|-------------------|
+      | Selection |-------------------------|-------------------|
+      | Insertion |-------------------------|-------------------|
+      | Quick     |-------------------------|-------------------|
+       
       For each run, write down the runtime estimate **in seconds** and circle the fastest
-      one. Did your choice of algorithm win or lose each time?
+      one. Did your choice of algorithm win or lose each time? In the other table, not the
+      average operation times **in microseconds**.
       
    1. Also, write down the a rough estimate of the average swap / comparison time across all algorithms.
       No need to get a calculator out - just get a rough idea.  Which operation took more time?
@@ -128,8 +135,8 @@ command depends on your present working directory), then please note that contex
    1. **Before running,** guess which algorithm you think will win. Note which algorithm you 
       think will be able to sort our users the fastest (total time estimate).
 
-   1. Once your code code compiles and runs, **run it three times** and complete a table
-      similar to the following in your notes:
+   1. Once your code code compiles and runs, **run it three times** and complete both tables
+      below in your notes (title the table **10,000 users -- 1 ms delay**):
       
       | Algo      | Runtime 1 | Runtime 2 | Runtime 3 |
       |-----------|-----------|-----------|-----------|
@@ -137,8 +144,15 @@ command depends on your present working directory), then please note that contex
       | Insertion |-----------|-----------|-----------|
       | Quick     |-----------|-----------|-----------|
       
+      | Algo      | Average Comparison Time | Average Swap Time |
+      |-----------|-------------------------|-------------------|
+      | Selection |-------------------------|-------------------|
+      | Insertion |-------------------------|-------------------|
+      | Quick     |-------------------------|-------------------|
+       
       For each run, write down the runtime estimate **in seconds** and circle the fastest
-      one. Did your choice of algorithm win or lose each time?
+      one. Did your choice of algorithm win or lose each time? In the other table, not the
+      average operation times **in microseconds**.
       
    1. Also, write down the a rough estimate of the average swap / comparison time across all algorithms.
       No need to get a calculator out - just get a rough idea.  Which operation took more time?
@@ -176,8 +190,8 @@ command depends on your present working directory), then please note that contex
    odd (people write weird stuff sometimes) -- the contents of the messages were populated from the 
    [Fortune Cookie Database](https://github.com/bmc/fortunes).
    
-1. Once you are sure that your method is working, update your `Comparator` so that our sorting algorithms
-   will sort based on this updated criteria.
+1. Once you are sure that your method is working, update your `Comparator` so that our sorting 
+   algorithms will sort based on this updated criteria.
 
 1. Now, write the code in `main` to sort the `users` array by user their large word count
    using the selection sort, inserstion sort, and quicksort algorithms available 
@@ -189,8 +203,8 @@ command depends on your present working directory), then please note that contex
    1. **Before running,** guess which algorithm you think will win. Note which algorithm you 
       think will be able to sort our users the fastest (total time estimate).
 
-   1. Once your code code compiles and runs, **run it a three times** and complete a table
-      similar to the following in your notes:
+   1. Once your code code compiles and runs, **run it three times** and complete both tables
+      below in your notes (title the table **750 users -- 1ms delay -- big comparator**):
       
       | Algo      | Runtime 1 | Runtime 2 | Runtime 3 |
       |-----------|-----------|-----------|-----------|
@@ -198,8 +212,15 @@ command depends on your present working directory), then please note that contex
       | Insertion |-----------|-----------|-----------|
       | Quick     |-----------|-----------|-----------|
       
+      | Algo      | Average Comparison Time | Average Swap Time |
+      |-----------|-------------------------|-------------------|
+      | Selection |-------------------------|-------------------|
+      | Insertion |-------------------------|-------------------|
+      | Quick     |-------------------------|-------------------|
+       
       For each run, write down the runtime estimate **in seconds** and circle the fastest
-      one. Did your choice of algorithm win or lose each time?
+      one. Did your choice of algorithm win or lose each time? In the other table, not the
+      average operation times **in microseconds**.
       
    1. In addition to writing the winning algorithm, write down the total run time for each algorithm.
       
