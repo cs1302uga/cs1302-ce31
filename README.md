@@ -63,11 +63,31 @@ command depends on your present working directory), then please note that contex
 
    1. Once your code code compiles and runs, **run it a couple times**. Each time, does your
       choice of algorithm win or lose? Write it in your notes!
-
+      
+   1. In addition to writing the winning algorithm, write down the total run time for each algorithm
+      using the `100ms` delay network swapper.
+      
    1. Stage, commit, and push all changes.
 
 1. **EVERYONE:** Pull your changes from the group repository.
 
+1. **EVERYONE:** Popularity in MyFace has increased! The social networking site just added `9900` new
+   members! The increase in revenue from ad sales has allowed the company to update their network
+   infrastructure which will dramatically reduce swap times.   
+
+1. In `main`, adjust the code to reduce the swap delay to `1ms` and update the number of members to `10,000`. 
+   In your notes, write down which algorithm you think will be able to sort our users the fastest (total time).
+   
+   1. Once your code code compiles and runs, **run it a couple times**. Each time, does your
+      choice of algorithm win or lose? Write it in your notes!
+      
+   1. In addition to writing the winning algorithm, write down the total run time for each algorithm
+      using the `100ms` delay network swapper.
+      
+   1. Stage, commit, and push all changes.
+
+1. **EVERYONE:** Pull your changes from the group repository.
+   
 **CHECKPOINT**
 
 <hr/>
