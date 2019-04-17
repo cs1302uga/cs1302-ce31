@@ -93,7 +93,7 @@ command depends on your present working directory), then please note that contex
    1. Add the code to print the total runtime estimate and individual average operation times
       for each algorithm (using your convenient new method) except for `BubbleSort` --
       your boss heard that former President Obama 
-      [thinks, "the bubble sort is not the way to go."](https://youtu.be/k4RRi_ntQc8?t=34)).
+      [thinks, "the bubble sort is not the way to go."](https://youtu.be/k4RRi_ntQc8?t=34).
 
    1. **Before running,** guess which algorithm you think will win. That is, write down which 
       algorithm you think will be able to sort our users the fastest (by total time estimate).
