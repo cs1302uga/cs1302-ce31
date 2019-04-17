@@ -55,8 +55,8 @@ command depends on your present working directory), then please note that contex
    fastest (total time). We can approximate total time by adding up the total time spent
    doing comparisons and the total time spent doing swaps.
 
-1. **NEXT GROUP MEMBER:** In `main`, adjust the code so that MyFace `users` array only contains
-   `100` users. Then, write the code to sort the `users` array by user
+1. **NEXT GROUP MEMBER (SWAP DRIVERS):** In `main`, adjust the code so that MyFace `users` array 
+   only contains `100` users. Then, write the code to sort the `users` array by user
    social score using each of the four algorithms available in the `cs1302.sorting` package.
    For this problem, you will need to supply a custom `Comparator<MyFaceUser>` implementation
    (probably using a lambda expression). You may use the `Swapper<MyFaceUser>` returned by
@@ -94,9 +94,9 @@ command depends on your present working directory), then please note that contex
 
 1. **EVERYONE:** Pull your changes from the group repository.
 
-1. **NEXT GROUP MEMBER:** Popularity in MyFace has increased! The social networking site just added 
-   `9900` new members! The increase in revenue from ad sales has allowed the company to update their 
-   network infrastructure which will dramatically reduce swap times.   
+1. **NEXT GROUP MEMBER (SWAP DRIVERS):** Popularity in MyFace has increased! The social networking site
+   just added `9900` new members! The increase in revenue from ad sales has allowed the company to update 
+   their network infrastructure which will dramatically reduce swap times.   
 
    In `main`, adjust the code to reduce the swap delay to `1ms` and update 
    the number of members to `10,000`. 
@@ -141,28 +141,42 @@ command depends on your present working directory), then please note that contex
    all of their messages. You may need to reference the
    [MyFace Message API](http://cobweb.cs.uga.edu/~mec/cs1302-mvn-site/cs1302-myface/apidocs/index.html).
    
-1. To make sure your method is working properly, modify the number of users in your social network to `25`. 
+   To make sure your method is working properly, modify the number of users in your social network to `25`. 
    Write a nested loop that prints the contents of all messages for each user along with the total count
    of large words across all messages. Make your print statements clear so that you can easily check
    that your method is working. **Note:** Each user has a random number of messages between `0` and the
    social network size divided by 10. That is [`0`, `25/10`]. 
    
-   **Warning:** You are reading people's messages. We don't encourage this
-   behavior, in general. Also, some of the messages might be a bit odd (people send weird things) - the
-   contents of the messages were populated from the [Fortune Cookie Database] (https://github.com/bmc/fortunes).
+   **Warning:** You are reading people's messages. **We don't encourage this behavior, in general.** 
+   I know it says we can do it in the [EULA](https://en.wikipedia.org/wiki/End-user_license_agreement),
+   but we know that most MyFace users don't read that thing. Also, some of the messages might be a bit 
+   odd (people write weird stuff sometimes) -- the contents of the messages were populated from the 
+   [Fortune Cookie Database](https://github.com/bmc/fortunes).
    
 1. Once you are sure that your method is working, update your `Comparator` so that our sorting algorithms
-   will sort based on this updated criteria. In your notes, write down which algorithm you think will be able 
-   to sort it the fastest according to total time.
+   will sort based on this updated criteria.
 
 1. Now, write the code in `main` to sort the `users` array by user their large word count using 
    each of the four algorithms available in the `cs1302.sorting` package.
    For this problem, you will need to use your custom `Comparator<MyFaceUser>` implementation.
    You should use the `Swapper<MyFaceUser>` returned by `Swapper.getNetworkSwapper(1)`.
+   **Change your social network size to `750` users for testing.**
 
-   1. Change your social network size to `750` users for testing. Once your code code compiles 
-      and runs, **run it a couple times**. Each time, does your choice of algorithm win or lose? 
-      Write it in your notes!
+   1. **Before running,** guess which algorithm you think will win. Note which algorithm you 
+      think will be able to sort our users the fastest (total time estimate).
+
+   1. Once your code code compiles and runs, **run it a four times** and complete a table
+      similar to the following in your notes:
+      
+      | Algo      | Runtime 1 | Runtime 2 | Runtime 3 | Runtime 4 |
+      |-----------|-----------|-----------|-----------|-----------|
+      | Bubble    |-----------|-----------|-----------|-----------|
+      | Selection |-----------|-----------|-----------|-----------|
+      | Insertion |-----------|-----------|-----------|-----------|
+      | Quick     |-----------|-----------|-----------|-----------|
+      
+      For each run, write down the runtime estimate **in seconds** and circle the fastest
+      one. Did your choice of algorithm win or lose each time?
       
    1. In addition to writing the winning algorithm, write down the total run time for each algorithm.
       
