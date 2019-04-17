@@ -70,19 +70,41 @@ command depends on your present working directory), then please note that contex
    [`Sort API`](http://cobweb.cs.uga.edu/~mec/cs1302-mvn-site/cs1302-sorting/apidocs/index.html).
    Add the code to print the total time (comparison time plus swap time) for each algorithm in
    seconds. **Note:** You will need to convert from nanoseconds to seconds before printing.
+   
+   1. Implement the following method:
+   
+      ```
+      /**
+       * Given a reference to a {@code Stats} object returned from the {@code getStats()}
+       * method of a sorting algorithm, print the sum of the values returned by the 
+       * {@code getSum()) method of each statistic (in seconds) and also print the value
+       * returned by the {@code getAverage()} method of each statistic.
+       * 
+       * @param stats an object containing the statistics for a sorting algorithm execution
+       */
+      public static void printEstimate(Sort.Stats stats);
+      ```
+      
+      Here is an example of the expected output of this method:
+      
+      ```
+      Total Runtime Estimate   =  
+      Average Comparision Time =
+      Average Swap Time        = 
+      ```
 
    1. **Before running,** guess which algorithm you think will win. Note which algorithm you 
       think will be able to sort our users the fastest (total time estimate).
 
-   1. Once your code code compiles and runs, **run it a four times** and complete a table
+   1. Once your code code compiles and runs, **run it three times** and complete a table
       similar to the following in your notes:
       
-      | Algo      | Runtime 1 | Runtime 2 | Runtime 3 | Runtime 4 |
-      |-----------|-----------|-----------|-----------|-----------|
-      | Bubble    |-----------|-----------|-----------|-----------|
-      | Selection |-----------|-----------|-----------|-----------|
-      | Insertion |-----------|-----------|-----------|-----------|
-      | Quick     |-----------|-----------|-----------|-----------|
+      | Algo      | Runtime 1 | Runtime 2 | Runtime 3 |
+      |-----------|-----------|-----------|-----------|
+      | Bubble    |-----------|-----------|-----------|
+      | Selection |-----------|-----------|-----------|
+      | Insertion |-----------|-----------|-----------|
+      | Quick     |-----------|-----------|-----------|
       
       For each run, write down the runtime estimate **in seconds** and circle the fastest
       one. Did your choice of algorithm win or lose each time?
@@ -104,15 +126,15 @@ command depends on your present working directory), then please note that contex
    1. **Before running,** guess which algorithm you think will win. Note which algorithm you 
       think will be able to sort our users the fastest (total time estimate).
 
-   1. Once your code code compiles and runs, **run it a four times** and complete a table
+   1. Once your code code compiles and runs, **run it three times** and complete a table
       similar to the following in your notes:
       
-      | Algo      | Runtime 1 | Runtime 2 | Runtime 3 | Runtime 4 |
-      |-----------|-----------|-----------|-----------|-----------|
-      | Bubble    |-----------|-----------|-----------|-----------|
-      | Selection |-----------|-----------|-----------|-----------|
-      | Insertion |-----------|-----------|-----------|-----------|
-      | Quick     |-----------|-----------|-----------|-----------|
+      | Algo      | Runtime 1 | Runtime 2 | Runtime 3 |
+      |-----------|-----------|-----------|-----------|
+      | Bubble    |-----------|-----------|-----------|
+      | Selection |-----------|-----------|-----------|
+      | Insertion |-----------|-----------|-----------|
+      | Quick     |-----------|-----------|-----------|
       
       For each run, write down the runtime estimate **in seconds** and circle the fastest
       one. Did your choice of algorithm win or lose each time?
@@ -165,15 +187,15 @@ command depends on your present working directory), then please note that contex
    1. **Before running,** guess which algorithm you think will win. Note which algorithm you 
       think will be able to sort our users the fastest (total time estimate).
 
-   1. Once your code code compiles and runs, **run it a four times** and complete a table
+   1. Once your code code compiles and runs, **run it a three times** and complete a table
       similar to the following in your notes:
       
-      | Algo      | Runtime 1 | Runtime 2 | Runtime 3 | Runtime 4 |
-      |-----------|-----------|-----------|-----------|-----------|
-      | Bubble    |-----------|-----------|-----------|-----------|
-      | Selection |-----------|-----------|-----------|-----------|
-      | Insertion |-----------|-----------|-----------|-----------|
-      | Quick     |-----------|-----------|-----------|-----------|
+      | Algo      | Runtime 1 | Runtime 2 | Runtime 3 |
+      |-----------|-----------|-----------|-----------|
+      | Bubble    |-----------|-----------|-----------|
+      | Selection |-----------|-----------|-----------|
+      | Insertion |-----------|-----------|-----------|
+      | Quick     |-----------|-----------|-----------|
       
       For each run, write down the runtime estimate **in seconds** and circle the fastest
       one. Did your choice of algorithm win or lose each time?
