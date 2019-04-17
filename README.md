@@ -67,6 +67,9 @@ command depends on your present working directory), then please note that contex
    1. In addition to writing the winning algorithm, write down the total run time for each algorithm
       using the `100ms` delay network swapper.
       
+   1. Also, write down the a rough estimate of the average swap / comparison time across all algorithms.
+      No need to get a calculator out - just get a rough idea.  Which operation took more time?
+      
    1. Stage, commit, and push all changes.
 
 1. **EVERYONE:** Pull your changes from the group repository.
@@ -84,6 +87,9 @@ command depends on your present working directory), then please note that contex
    1. In addition to writing the winning algorithm, write down the total run time for each algorithm
       using the `100ms` delay network swapper.
       
+   1. Also, write down the a rough estimate of the average swap / comparison time across all algorithms.
+      No need to get a calculator out - just get a rough idea.  Which operation took more time?
+      
    1. Stage, commit, and push all changes.
 
 1. **EVERYONE:** Pull your changes from the group repository.
@@ -100,11 +106,22 @@ command depends on your present working directory), then please note that contex
    In your notes, write down which algorithm you think will be able to sort users the fastest (total time)
    using this new criteria and our updated (`1ms` delay) network. 
    
-1. **NEXT GROUP MEMBER (SWAP DRIVERS):** in `main`, modify the `Comparator` to sort users by the total number
-   of words with `5` or more characters across all of their messages. You may need to reference the
+1. **NEXT GROUP MEMBER (SWAP DRIVERS):** in `main`, write a method called `countLargeWords` that takes a 
+   `MyFaceUser` as an argument and returns the total number of words with `5` or more characters across 
+   all of their messages. You may need to reference the
    [MyFace Message API](http://cobweb.cs.uga.edu/~mec/cs1302-mvn-site/cs1302-myface/apidocs/index.html).
    
+1. To make sure your method is working properly, modify the number of users in your social network to `25`. 
+   Write a nested loop that prints the contents of all messages for each user along with the total count
+   of large words across all messages. Make your print statements clear so that you can easily check
+   that your method is working. **Note:** Each user has a random number of messages between `0` and the
+   social network size divided by 10. That is [`0`, `25/10`]. 
    
+   **Warning:** You are reading people's messages. We don't encourage this
+   behavior, in general. Also, some of the messages might be a bit odd (people send weird things) - the
+   contents of the messages were populated from the [Fortune Cookie Database] (https://github.com/bmc/fortunes).
+   
+1. Do some sorts.
 **CHECKPOINT**
  
 
