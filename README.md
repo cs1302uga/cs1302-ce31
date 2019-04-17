@@ -57,7 +57,9 @@ command depends on your present working directory), then please note that contex
 
 1. **NEXT GROUP MEMBER (SWAP DRIVERS):** In `main`, adjust the code so that MyFace `users` array 
    only contains `100` users. Then, write the code to sort the `users` array by user
-   social score using each of the four algorithms available in the `cs1302.sorting` package.
+   social score using the selection sort, inserstion sort, and quicksort algorithms available 
+   in the `cs1302.sorting` package -- your boss heard that 
+   [former President Obama thinks, "the bubble sort is not the way to go."](https://youtu.be/k4RRi_ntQc8?t=34)
    For this problem, you will need to supply a custom `Comparator<MyFaceUser>` implementation
    (probably using a lambda expression). You may use the `Swapper<MyFaceUser>` returned by
    `Swapper.getNetworkSwapper(100)` to simulate random network lag with a maximum delay of
@@ -91,9 +93,7 @@ command depends on your present working directory), then please note that contex
       You do NOT need to truncate digits after the decimal point to specific precision.
       
    1. Add the code to print the total runtime estimate and individual average operation times
-      for each algorithm (using your convenient new method) except for `BubbleSort` --
-      your boss heard that former President Obama 
-      [thinks, "the bubble sort is not the way to go."](https://youtu.be/k4RRi_ntQc8?t=34).
+      for each algorithm (using your convenient new method) except for `BubbleSort`.
 
    1. **Before running,** guess which algorithm you think will win. That is, write down which 
       algorithm you think will be able to sort our users the fastest (by total time estimate).
@@ -179,10 +179,11 @@ command depends on your present working directory), then please note that contex
 1. Once you are sure that your method is working, update your `Comparator` so that our sorting algorithms
    will sort based on this updated criteria.
 
-1. Now, write the code in `main` to sort the `users` array by user their large word count using 
-   each of the four algorithms available in the `cs1302.sorting` package.
-   For this problem, you will need to use your custom `Comparator<MyFaceUser>` implementation.
-   You should use the `Swapper<MyFaceUser>` returned by `Swapper.getNetworkSwapper(1)`.
+1. Now, write the code in `main` to sort the `users` array by user their large word count
+   using the selection sort, inserstion sort, and quicksort algorithms available 
+   in the `cs1302.sorting` package. For this problem, you will need to use your custom 
+   `Comparator<MyFaceUser>` implementation. You should use the `Swapper<MyFaceUser>` returned 
+   by `Swapper.getNetworkSwapper(1)`.
    **Change your social network size to `750` users for testing.**
 
    1. **Before running,** guess which algorithm you think will win. Note which algorithm you 
