@@ -87,7 +87,8 @@ command depends on your present working directory), then please note that contex
       Average Swap Time        = 
       ```
       
-   1. Add the code to print the total runtime estimate for each algorithm in seconds. 
+   1. Add the code to print the total runtime estimate and individual average operation times
+      for each algorithm (using your convenient new method).
 
    1. **Before running,** guess which algorithm you think will win. Note which algorithm you 
       think will be able to sort our users the fastest (total time estimate).
