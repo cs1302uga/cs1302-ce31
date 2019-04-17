@@ -21,7 +21,7 @@ command depends on your present working directory), then please note that contex
 
 1. **This exercise picks up from the end of checkpoint three of 
    [`cs1302-ce30`](https://github.com/cs1302uga/cs1302-ce30/).** 
-   If your group did not complete it, then you should do that now.  
+   If your group did not complete through checkpoint 3 of `ce30`, then you should do that now.  
 
 1. **If you have a new group member,** then please add them as a collaborator via the
    repository's GitHub website (click "Settings" → "Collaborators"). This will send them
@@ -36,27 +36,30 @@ command depends on your present working directory), then please note that contex
 
 ## Exercise Steps
 
-1. Once each group member has completed the **Getting Started steps**,
-   pick an ordering for the group members (e.g., Group Member 1, Group Member 2, etc.).
-   If a step is being performed by one group member, then everyone is expected
-   to watch, pay attention, and take notes.
-
 1. **EVERYONE:** It turns out that your company stores the elements of the MyFace 
    `users` array on multiple servers on a network. This makes swapping elements in the array 
    costly as network lag is involved. Consider a scenario where you need to sort the `users` array 
-   by user *social score* (as in the previous checkpoint) using each of the four algorithms available
+   by user *social score* (as in the previous exercise) using each of the four algorithms available
    in the `cs1302.sorting` package.
 
    In your notes, write down which algorithm you think will be able to sort it the
-   fastest according to: i) comparisons; and ii) swaps.
+   fastest (total time). We can approximate total time by adding up the total time spent
+   doing comparisons and the total time spent doing swaps.
 
 1. **NEXT GROUP MEMBER:** In `main`, adjust the code so that MyFace `users` array only contains
-   `100` usres. Then, write the code to sort the `users` array by user
+   `100` users. Then, write the code to sort the `users` array by user
    social score using each of the four algorithms available in the `cs1302.sorting` package.
    For this problem, you will need to supply a custom `Comparator<MyFaceUser>` implementation
    (probably using a lambda expression). You may use the `Swapper<MyFaceUser>` returned by
    `Swapper.getNetworkSwapper(100)` to simulate random network lag with a maximum delay of
    `100` milliseconds.
+   
+1. To avoid computing the total running time manually, let's write a bit of additional code
+   to have the program print the total run time for each algorithm **in seconds**. To accomplish this,
+   you will need to gain access to the individual statistics for comparisons and swaps using the
+   methods provided in the [`Sort API`](http://cobweb.cs.uga.edu/~mec/cs1302-mvn-site/cs1302-sorting/apidocs/index.html).
+   Add the code to print the total time (comparison time plus swap time) for each algorithm in
+   seconds. **Note:** You will need to convert from nanoseconds to seconds before printing.
 
    1. Once your code code compiles and runs, **run it a couple times**. Each time, does your
       choice of algorithm win or lose? Write it in your notes!
