@@ -90,6 +90,24 @@ command depends on your present working directory), then please note that contex
    
 **CHECKPOINT**
 
+1. **EVERYONE:** Your boss was contacted by a new startup company called "Insert Name Here" that helps people
+   turn their ideas into books. They want to target the users that may be interested in becoming writers. Your
+   boss has suggested to target the users whose messages contain big words. The idea being that people who
+   talk to people who use big words are more likely to be writers. It may not be his best idea but it's a 
+   starting point. You realize that sorting people by this updated criteria may result in an increase in
+   comparison times for users. 
+   
+   In your notes, write down which algorithm you think will be able to sort users the fastest (total time)
+   using this new criteria and our updated (`1ms` delay) network. 
+   
+1. **NEXT GROUP MEMBER (SWAP DRIVERS):** in `main`, modify the `Comparator` to sort users by the total number
+   of words with `5` or more characters across all of their messages. You may need to reference the
+   [MyFace Message API](http://cobweb.cs.uga.edu/~mec/cs1302-mvn-site/cs1302-myface/apidocs/index.html).
+   
+   
+**CHECKPOINT**
+ 
+
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
