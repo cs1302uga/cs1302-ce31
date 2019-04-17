@@ -71,8 +71,9 @@ command depends on your present working directory), then please note that contex
       /**
        * Given a reference to a {@code Stats} object returned from the {@code getStats()}
        * method of a sorting algorithm, print the sum of the values returned by the 
-       * {@code getSum()) method of each statistic (in seconds) and also print the value
-       * returned by the {@code getAverage()} method of each statistic.
+       * {@code getSum()) method of each statistic (converted to seconds) and also print the 
+       * values returned by the {@code getAverage()} method of each statistic (converted to
+       * microseconds).
        * 
        * @param stats an object containing the statistics for a sorting algorithm execution
        */
@@ -82,23 +83,27 @@ command depends on your present working directory), then please note that contex
       Here is an example of the expected output of this method:
       
       ```
-      Total Runtime Estimate   =  
-      Average Comparision Time =
-      Average Swap Time        = 
+      Total Runtime Estimate   = 109.952384858 s
+      Average Comparision Time = 57.7091 us
+      Average Swap Time        = 48938.210 us
       ```
       
+      You do NOT need to truncate digits after the decimal point to specific precision.
+      
    1. Add the code to print the total runtime estimate and individual average operation times
-      for each algorithm (using your convenient new method).
+      for each algorithm (using your convenient new method) except for `BubbleSort` --
+      your boss heard that former President Obama 
+      [thinks, "the bubble sort is not the way to go."](https://youtu.be/k4RRi_ntQc8?t=34)).
 
-   1. **Before running,** guess which algorithm you think will win. Note which algorithm you 
-      think will be able to sort our users the fastest (total time estimate).
+   1. **Before running,** guess which algorithm you think will win. That is, write down which 
+      algorithm you think will be able to sort our users the fastest (by total time estimate).
 
    1. Once your code code compiles and runs, **run it three times** and complete a table
       similar to the following in your notes:
       
       | Algo      | Runtime 1 | Runtime 2 | Runtime 3 |
       |-----------|-----------|-----------|-----------|
-      | Bubble    |-----------|-----------|-----------|
+      | ~Bubble~  |-----------|-----------|-----------|
       | Selection |-----------|-----------|-----------|
       | Insertion |-----------|-----------|-----------|
       | Quick     |-----------|-----------|-----------|
@@ -128,7 +133,6 @@ command depends on your present working directory), then please note that contex
       
       | Algo      | Runtime 1 | Runtime 2 | Runtime 3 |
       |-----------|-----------|-----------|-----------|
-      | Bubble    |-----------|-----------|-----------|
       | Selection |-----------|-----------|-----------|
       | Insertion |-----------|-----------|-----------|
       | Quick     |-----------|-----------|-----------|
@@ -189,7 +193,6 @@ command depends on your present working directory), then please note that contex
       
       | Algo      | Runtime 1 | Runtime 2 | Runtime 3 |
       |-----------|-----------|-----------|-----------|
-      | Bubble    |-----------|-----------|-----------|
       | Selection |-----------|-----------|-----------|
       | Insertion |-----------|-----------|-----------|
       | Quick     |-----------|-----------|-----------|
