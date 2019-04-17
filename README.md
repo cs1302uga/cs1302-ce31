@@ -64,17 +64,25 @@ command depends on your present working directory), then please note that contex
    `100` milliseconds.
    
 1. To avoid computing the total running time manually, let's write a bit of additional code
-   to have the program print the total run time for each algorithm **in seconds**. To accomplish this,
-   you will need to gain access to the individual statistics for comparisons and swaps using the
-   methods provided in the [`Sort API`](http://cobweb.cs.uga.edu/~mec/cs1302-mvn-site/cs1302-sorting/apidocs/index.html).
+   to have the program print an estimate for total run time of each algorithm **in seconds**. 
+   To accomplish this, you will need to gain access to the individual statistics for comparisons 
+   and swaps using the methods provided in the 
+   [`Sort API`](http://cobweb.cs.uga.edu/~mec/cs1302-mvn-site/cs1302-sorting/apidocs/index.html).
    Add the code to print the total time (comparison time plus swap time) for each algorithm in
    seconds. **Note:** You will need to convert from nanoseconds to seconds before printing.
 
-   1. Once your code code compiles and runs, **run it a couple times**. Each time, does your
-      choice of algorithm win or lose? Write it in your notes!
+   1. **Before running,** guess which algorithm you think will win.
+
+   1. Once your code code compiles and runs, **run it a four times** and complete a table
+      similar to the following in your notes:
       
-   1. In addition to writing the winning algorithm, write down the total run time for each algorithm
-      using the `100ms` delay network swapper.
+      | Algo | Runtime 1 | Runtime 2 | Runtime 3 | Runtime 4 |
+      |------|-----------|-----------|-----------|-----------|
+      |------|-----------|-----------|-----------|-----------|
+      |------|-----------|-----------|-----------|-----------|
+      
+      For each algorithm and run, write down the runtime **in seconds** and circle the fastest
+      one. Did your choice of algorithm win or lose?
       
    1. Also, write down the a rough estimate of the average swap / comparison time across all algorithms.
       No need to get a calculator out - just get a rough idea.  Which operation took more time?
