@@ -64,7 +64,7 @@ command depends on your present working directory), then please note that contex
    `100` milliseconds.
    
 1. To avoid computing the total running time manually, let's write a bit of additional code
-   to have the program print an estimate for total run time of each algorithm **in seconds**. 
+   to have the program print an _estimate_ for total run time of each algorithm **in seconds**. 
    To accomplish this, you will need to gain access to the individual statistics for comparisons 
    and swaps using the methods provided in the 
    [`Sort API`](http://cobweb.cs.uga.edu/~mec/cs1302-mvn-site/cs1302-sorting/apidocs/index.html).
@@ -76,13 +76,15 @@ command depends on your present working directory), then please note that contex
    1. Once your code code compiles and runs, **run it a four times** and complete a table
       similar to the following in your notes:
       
-      | Algo | Runtime 1 | Runtime 2 | Runtime 3 | Runtime 4 |
-      |------|-----------|-----------|-----------|-----------|
-      |------|-----------|-----------|-----------|-----------|
-      |------|-----------|-----------|-----------|-----------|
+      | Algo      | Runtime 1 | Runtime 2 | Runtime 3 | Runtime 4 |
+      |-----------|-----------|-----------|-----------|-----------|
+      | Bubble    |-----------|-----------|-----------|-----------|
+      | Selection |-----------|-----------|-----------|-----------|
+      | Insertion |-----------|-----------|-----------|-----------|
+      | Quick     |-----------|-----------|-----------|-----------|
       
-      For each algorithm and run, write down the runtime **in seconds** and circle the fastest
-      one. Did your choice of algorithm win or lose?
+      For each run, write down the runtime estimate **in seconds** and circle the fastest
+      one. Did your choice of algorithm win or lose each time?
       
    1. Also, write down the a rough estimate of the average swap / comparison time across all algorithms.
       No need to get a calculator out - just get a rough idea.  Which operation took more time?
