@@ -33,6 +33,15 @@ command depends on your present working directory), then please note that contex
    pick an ordering for the group members (e.g., Group Member 1, Group Member 2, etc.).
    If a step is being performed by one group member, then everyone is expected
    to watch, pay attention, and take notes.
+   
+1. Your instructors may have updated the MyFace and Sorting libraries. Theses libraries are
+   on the bleeding edge in order to meet the demand of your analytics programs. To make sure 
+   you have the latest version of each library dependency, you can execute the following 
+   Maven command in the same directory as your POM:
+
+   ```
+   $ mvn dependency:resolve -U
+   ```
 
 ## Exercise Steps
 
