@@ -112,9 +112,6 @@ command depends on your present working directory), then please note that contex
       one. Did your choice of algorithm win or lose each time? In the other table, not the
       average operation times **in microseconds**.
       
-   1. Also, write down the a rough estimate of the average swap / comparison time across all algorithms.
-      No need to get a calculator out - just get a rough idea.  Which operation took more time?
-      
    1. Stage, commit, and push all changes.
 
 1. **EVERYONE:** Pull your changes from the group repository.
@@ -141,9 +138,6 @@ command depends on your present working directory), then please note that contex
       For each run, write down the runtime estimate **in seconds** and circle the fastest
       one. Did your choice of algorithm win or lose each time? In the other table, not the
       average operation times **in microseconds**.
-      
-   1. Also, write down the a rough estimate of the average swap / comparison time across all algorithms.
-      No need to get a calculator out - just get a rough idea.  Which operation took more time?
       
    1. Stage, commit, and push all changes.
 
@@ -185,8 +179,7 @@ command depends on your present working directory), then please note that contex
    using the selection sort, inserstion sort, and quicksort algorithms available 
    in the `cs1302.sorting` package. For this problem, you will need to use your custom 
    `Comparator<MyFaceUser>` implementation. You should use the `Swapper<MyFaceUser>` returned 
-   by `Swapper.getNetworkSwapper(1)`.
-   **Change your social network size to `750` users for testing.**
+   by `Swapper.getNetworkSwapper(1)`. **Change your social network size to `750` users for testing.**
 
    1. **Before running,** guess which algorithm you think will win. Note which algorithm you 
       think will be able to sort our users the fastest (total time estimate).
@@ -204,14 +197,13 @@ command depends on your present working directory), then please note that contex
       one. Did your choice of algorithm win or lose each time? In the other table, not the
       average operation times **in microseconds**.
       
-   1. In addition to writing the winning algorithm, write down the total run time for each algorithm.
-      
-   1. Also, write down the a rough estimate of the average swap / comparison time across all algorithms.
-      No need to get a calculator out - just get a rough idea.  Which operation took more time?
-      
    1. Stage, commit, and push all changes.
 
 1. **EVERYONE:** Pull your changes from the group repository.
+
+1. **CLOSING QUESTION:** What do you think your instructors wanted you to notice about the
+   average comparison and average swap times between the three scenarios explored throughout
+   the exercise?
 
 **CHECKPOINT**
  
