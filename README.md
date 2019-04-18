@@ -21,7 +21,20 @@ command depends on your present working directory), then please note that contex
 
 1. **This exercise picks up from the end of checkpoint three of 
    [`cs1302-ce30`](https://github.com/cs1302uga/cs1302-ce30/).** 
-   If your group did not complete through checkpoint 3 of `ce30`, then you should do that now.  
+   If your group did not complete through checkpoint 3 of `ce30`, then you should do that now. 
+   
+   If you have not yet written a method to compute a `MyFaceUser` social score,
+   here is a sample implementaton:
+   
+   ```java
+   public static int socialScore(MyFaceUser user) {
+       return user.getFriends().size() * user.getName().length() / user.getAge()
+   } // socialScore
+   ```
+   
+   Given the `socialScore` method above, you can create your **reverse social score**
+   comparator by taking the reverse, ordered difference between two user social
+   scores.
 
 1. **If you have a new group member,** then please add them as a collaborator via the
    repository's GitHub website (click "Settings" → "Collaborators"). This will send them
