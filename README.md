@@ -1,7 +1,7 @@
 # cs1302-ce31 More Social Network Graph Analytics
 
-In this class exercise, students will explore the use of different sorting algorithms in the
-context of various data analytics problems related to the MyFace social network.
+In this class exercise, students will further explore the use of different sorting algorithms 
+in the context of various data analytics problems related to the MyFace social network.
 
 ## References and Prerequisites
 
