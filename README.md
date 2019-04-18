@@ -129,6 +129,8 @@ command depends on your present working directory), then please note that contex
 
 1. **EVERYONE:** Pull your changes from the group repository.
 
+**CHECKPOINT**
+
 1. **NEXT GROUP MEMBER (SWAP DRIVERS):** Popularity in MyFace has increased! The social networking site
    just added `9900` new members! The increase in revenue from ad sales has allowed the company to update 
    their network infrastructure which will dramatically reduce swap times.   
